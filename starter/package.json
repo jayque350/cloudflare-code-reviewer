@@ -1,0 +1,18 @@
+{
+  "name": "cloudflare-code-reviewer-starter",
+  "version": "1.0.0",
+  "description": "Starter Track: minimal single-file GitHub PR code reviewer on Cloudflare Workers + Workers AI. Isolated in its own directory so Cloudflare's Deploy to Workers button can target it directly.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "parse-diff": "^0.11.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260908.1",
+    "typescript": "^5.7.3",
+    "wrangler": "^4.130.0"
+  }
+}

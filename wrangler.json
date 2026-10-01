@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cloudflare-code-reviewer",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-09",
+  "vars": {
+    "GITHUB_APP_ID": "4900280",
+    "JEV_ESCALATION_FLOOR": "0.5"
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "PR_COORDINATOR",
+        "class_name": "PrReviewCoordinator"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["PrReviewCoordinator"]
+    }
+  ]
+}

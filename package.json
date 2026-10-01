@@ -1,0 +1,18 @@
+{
+  "name": "cloudflare-code-reviewer",
+  "version": "1.0.0",
+  "description": "Advanced Track: full 7-pillar security suite, SQLite Durable Objects, and multi-model committee. An automated GitHub PR code review agent running on Cloudflare Workers, Durable Objects, Workers AI, and Alibaba OCR rules. The Starter Track lives in its own isolated ./starter directory (see starter/package.json) so Cloudflare's Deploy to Workers button can target each track independently.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "parse-diff": "^0.11.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260908.1",
+    "typescript": "^5.7.3",
+    "wrangler": "^4.130.0"
+  }
+}

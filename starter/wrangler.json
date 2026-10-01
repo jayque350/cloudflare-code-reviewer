@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cloudflare-code-reviewer-starter",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-09",
+  "vars": {
+    "GITHUB_APP_ID": "4900280"
+  },
+  "ai": {
+    "binding": "AI"
+  }
+}
